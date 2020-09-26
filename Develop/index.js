@@ -24,9 +24,9 @@ const questions = [
         message: "Please provide the project usage"
     },
     {
-        type: "input",
-        name: "licence",
-        message: "Please provide the project licence or your badge link"
+        type: "list",
+        name: "license",
+        message: "Please provide the project license or your badge link"
     },
     {
         type: "input",
@@ -56,8 +56,7 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {
-}
+const writeToFile = (fileName, data) 
 
 // function to initialize program
 function init() {
