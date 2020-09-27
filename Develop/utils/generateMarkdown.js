@@ -1,50 +1,44 @@
 // function to generate markdown for README
-function generateMarkdown(data) {
-  return `
+function generateMarkdown(data, githubInfo) {
+    return `
+# ${data.title}
   
-# **${data.title}**
-
 ${data.badge}
-
-##Description
-  ${data.description}
-
-##Table of Contents
-  -[Description](#Description)
-  -[Installation](#Installation)
-  -[Usage](#Usage)
-  -[License](#License)
-  -[Contributors](#Contributors)
-  -[Test](#Test)
-  -[Repository Link](#Repository)
-  -[GitHub Info](#GitHub)
-
-##Installation
-  ${data.installation}
-
-##Usage
-  ${data.usage}
   
-##License
-  ${data.license}
+## Table of contents
+  - [Description](#Description)
+  - [Installation](#Installation)
+  - [Usage](#Usage)
+  - [Licence](#Licence)
+  - [Contributors](#Contributors)
+  - [Test](#Test)
+  - [Repository Link](#Repository)
+  - [GitHub Info](#GitHub) 
 
-##Badge
-  ${data.badge}  
+## Description 
+    ${data.description}  
   
-##Contributors
-  ${data.contributors}  
+## Installation
+    ${data.installation}
+  
+## Usage
+    ${data.usage}
 
-##Test
-  ${data.test}
+## License
+    ${data.license}
   
-##Repository
-  -[Project Repo](${data.repo})
+## Contributors
+    ${data.contributing}
   
-##GitHub
-  -[GitHub Profile](${githubInfo.profile})
-  -<${githubInfo.email}>
-
-`;
+## Test
+    ${data.test}
+  
+## Repository
+  - [Project Repo](${data.repo})
+  
+## GitHub
+    - [GitHub Profile](${githubInfo.profile})
+    `;
 }
-
+  
 module.exports = generateMarkdown;
