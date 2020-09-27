@@ -18,5 +18,3 @@ Clone repo from github
 
 ## Author
 Logan Page (logandpage)
-
-[How to create a Professional README](./readme-guide.md)
